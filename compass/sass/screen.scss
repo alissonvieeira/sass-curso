@@ -1,10 +1,24 @@
 $default-text-shadow-color: rgba(red, 0.6);
 $default-text-shadow-blur: 5px;
-$default-text-shadow-v-offsset: 5px;
+$default-text-shadow-v-offset: 5px;
 
-@import "compass/reset";
-@import "compass/css3";
+@import "compass";
 
 .sombra {
   @include single-text-shadow;
+}
+
+.box {
+  border: 1px solid red;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: green;
+  @include transition;
+  &:hover {
+    background: blue;
+    $default-text-shadow-blur: 90px;
+    @include single-box-shadow;
+  }
 }

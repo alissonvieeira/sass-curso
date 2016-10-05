@@ -1,17 +1,17 @@
 /*
-Error: File to import not found or unreadable: compass/reset.
+Error: File to import not found or unreadable: compass.
         on line 5 of screen.scss
 
 1: $default-text-shadow-color: rgba(red, 0.6);
 2: $default-text-shadow-blur: 5px;
-3: $default-text-shadow-v-offsset: 5px;
+3: $default-text-shadow-v-offset: 5px;
 4: 
-5: @import "compass/reset";
-6: @import "compass/css3";
-7: 
-8: .sombra {
-9:   @include single-text-shadow;
-10: }
+5: @import "compass";
+6: 
+7: .sombra {
+8:   @include single-text-shadow;
+9: }
+10: 
 
 Backtrace:
 screen.scss:5
@@ -57,4 +57,4 @@ C:/Ruby23-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass/reset.\A         on line 5 of screen.scss\A \A 1: $default-text-shadow-color: rgba(red, 0.6);\A 2: $default-text-shadow-blur: 5px;\A 3: $default-text-shadow-v-offsset: 5px;\A 4: \A 5: @import \"compass/reset\";\A 6: @import \"compass/css3\";\A 7: \A 8: .sombra {\A 9:   @include single-text-shadow;\A 10: }"; }
+  content: "Error: File to import not found or unreadable: compass.\A         on line 5 of screen.scss\A \A 1: $default-text-shadow-color: rgba(red, 0.6);\A 2: $default-text-shadow-blur: 5px;\A 3: $default-text-shadow-v-offset: 5px;\A 4: \A 5: @import \"compass\";\A 6: \A 7: .sombra {\A 8:   @include single-text-shadow;\A 9: }\A 10: "; }
