@@ -1,16 +1,20 @@
 /*
 Error: File to import not found or unreadable: compass/reset.
-        on line 6 of screen.scss
+        on line 5 of screen.scss
 
-1: /* Welcome to Compass.
-2:  * In this file you should write your main styles. (or centralize your imports)
-3:  * Import this file using the following HTML or equivalent:
-4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
-5: 
-6: @import "compass/reset";
+1: $default-text-shadow-color: rgba(red, 0.6);
+2: $default-text-shadow-blur: 5px;
+3: $default-text-shadow-v-offsset: 5px;
+4: 
+5: @import "compass/reset";
+6: @import "compass/css3";
+7: 
+8: .sombra {
+9:   @include single-text-shadow;
+10: }
 
 Backtrace:
-screen.scss:6
+screen.scss:5
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
@@ -53,4 +57,4 @@ C:/Ruby23-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass/reset.\A         on line 6 of screen.scss\A \A 1: /* Welcome to Compass.\A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: @import \"compass/reset\";"; }
+  content: "Error: File to import not found or unreadable: compass/reset.\A         on line 5 of screen.scss\A \A 1: $default-text-shadow-color: rgba(red, 0.6);\A 2: $default-text-shadow-blur: 5px;\A 3: $default-text-shadow-v-offsset: 5px;\A 4: \A 5: @import \"compass/reset\";\A 6: @import \"compass/css3\";\A 7: \A 8: .sombra {\A 9:   @include single-text-shadow;\A 10: }"; }
