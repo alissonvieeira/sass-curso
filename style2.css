@@ -2,11 +2,12 @@ body {
   font-size: 20px; }
 
 .box, .vermelho, .laranja {
-  border: 1px solid;
+  border: 5px solid;
   padding: 20px;
   margin: 20px auto;
-  color: #000080;
-  border-color: blue; }
+  color: white;
+  border-color: black;
+  background-color: #000080; }
   .box em, .vermelho em, .laranja em {
     font-weight: bold; }
 
