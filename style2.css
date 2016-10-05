@@ -5,18 +5,19 @@ body {
   border: 5px solid;
   padding: 20px;
   margin: 20px auto;
-  color: white;
-  border-color: black;
-  background-color: #000080; }
+  border-color: #1f1f1f;
+  background-color: #3E5680; }
   .box em, .vermelho em, .laranja em {
     font-weight: bold; }
 
 .vermelho {
   color: darkred;
-  border-color: red; }
+  border-color: #a74738;
+  background-color: #FF755F; }
 
 .laranja {
   color: orangered;
-  border-color: orange; }
+  border-color: #87662d;
+  background-color: #FFB435; }
 
 /*# sourceMappingURL=style2.css.map */

@@ -1,4 +1,10 @@
-$azul-var: #000080;
+$azul: #3E5680;
+$vermelho: #FF755F;
+$laranja: #FFB435;
+
+@function fixBorder($cor) {
+  @return desaturate(darken($cor, 25%), 50%);
+}
 
 body {
   font-size: 20px;
@@ -8,10 +14,8 @@ body {
   border: 5px solid;
   padding: 20px;
   margin: 20px auto;
-  color: white;
-  $azul_var: blue !default;
-  border-color: desaturate(darken($azul_var, 25%), 50%);
-  background-color: $azul-var;
+  border-color: fixBorder($azul);
+  background-color: $azul;
 
   em {
     font-weight: bold;
@@ -21,11 +25,13 @@ body {
 .vermelho {
   @extend .box;
   color: darkred;
-  border-color: red;
+  border-color: fixBorder($vermelho);
+  background-color: $vermelho;
 }
 
 .laranja {
   @extend .box;
   color: orangered;
-  border-color: orange;
+  border-color: fixBorder($laranja);
+  background-color: $laranja;
 }
