@@ -11,13 +11,15 @@ body {
     font-weight: bold; }
 
 .vermelho {
-  color: darkred;
   border-color: #a74738;
   background-color: #FF755F; }
+  .vermelho em {
+    color: #a74738; }
 
 .laranja {
-  color: orangered;
   border-color: #87662d;
   background-color: #FFB435; }
+  .laranja em {
+    color: #87662d; }
 
 /*# sourceMappingURL=style2.css.map */
