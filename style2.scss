@@ -1,3 +1,5 @@
+$azul: #000080;
+
 body {
   font-size: 20px;
 }
@@ -7,7 +9,8 @@ body {
   padding: 20px;
   margin: 20px auto;
 
-  color: #000080;
+  $azul: blue !default;
+  color: $azul;
   border-color: blue;
 
   em {
