@@ -7,11 +7,11 @@ Error: File to import not found or unreadable: compass.
 3: $default-text-shadow-v-offset: 5px;
 4: 
 5: @import "compass";
-6: 
-7: .sombra {
-8:   @include single-text-shadow;
-9: }
-10: 
+6: @import "icon/*.png";
+7: @include all-icon-sprites;
+8: 
+9: .sombra {
+10:   @include single-text-shadow;
 
 Backtrace:
 screen.scss:5
@@ -57,4 +57,4 @@ C:/Ruby23-x64/bin/scss:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: compass.\A         on line 5 of screen.scss\A \A 1: $default-text-shadow-color: rgba(red, 0.6);\A 2: $default-text-shadow-blur: 5px;\A 3: $default-text-shadow-v-offset: 5px;\A 4: \A 5: @import \"compass\";\A 6: \A 7: .sombra {\A 8:   @include single-text-shadow;\A 9: }\A 10: "; }
+  content: "Error: File to import not found or unreadable: compass.\A         on line 5 of screen.scss\A \A 1: $default-text-shadow-color: rgba(red, 0.6);\A 2: $default-text-shadow-blur: 5px;\A 3: $default-text-shadow-v-offset: 5px;\A 4: \A 5: @import \"compass\";\A 6: @import \"icon/*.png\";\A 7: @include all-icon-sprites;\A 8: \A 9: .sombra {\A 10:   @include single-text-shadow;"; }

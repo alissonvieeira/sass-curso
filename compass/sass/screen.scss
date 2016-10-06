@@ -3,9 +3,16 @@ $default-text-shadow-blur: 5px;
 $default-text-shadow-v-offset: 5px;
 
 @import "compass";
+@import "icon/*.png";
+@include all-icon-sprites;
 
 .sombra {
   @include single-text-shadow;
+}
+
+.icon-download {
+  width: 302px;
+  height: 302px;
 }
 
 .box {
@@ -15,6 +22,7 @@ $default-text-shadow-v-offset: 5px;
   height: 200px;
   margin: 0 auto;
   background: green;
+  background-image: image-url('background/back.jpg');
   @include transition;
   &:hover {
     background: blue;
